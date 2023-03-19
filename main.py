@@ -18,6 +18,7 @@ app = Client('AIExplorer', api_id=api_id, api_hash=api_hash, bot_token=bot_token
 
 @app.on_message(filters.command('start'))
 async def start(client, message):
+    await app.send_messages(message.chat.id, "Bot Started")
     while True:
         url = "https://theresanaiforthat.com/"
         req = requests.get(url)
