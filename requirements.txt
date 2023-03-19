@@ -1,0 +1,5 @@
+asyncio
+pyrogram
+TgCrypto
+beautifulsoup4
+requests
