@@ -42,6 +42,7 @@ async def start(client, message):
                         parse_mode=html,
                         reply_markup=InlineKeyboardMarkup(button))
                     await asyncio.sleep(3)
+            await app.send_message(message.chat.id, f"Yeni bir AI bulunamadı. Yeni bir AI bulunana kadar bekleniyor...")
             time.sleep(10800)
             
     except Exception as e:
